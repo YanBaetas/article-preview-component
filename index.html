@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
 
     <link
@@ -21,33 +27,57 @@
         <img src="./images/drawers.jpg" alt="" />
       </div>
 
-      <section class="card-body">
-        <h1 class="article-title">
-          Shift the overall look and feel by adding these wonderful touches to
-          furniture in your home
-        </h1>
-
-        <p class="article-preview">
-          Ever been in a room and felt like something was missing? Perhaps it
-          felt slightly bare and uninviting. I’ve got some simple tips to help
-          you make any room feel complete.
-        </p>
-      </section>
-
       <div>
-        <div class="card-author">
-          <p class="article-author">Michelle Appleton</p>
-          <p class="article-date">28 Jun 2020</p>
-        </div>
+        <section class="card-body">
+          <h1 class="article-title">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h1>
 
-        <div class="card-share">
-          <span>Share</span>
-          <img src="./images/icon-facebook.svg" alt="Facebook" />
-          <img src="./images/icon-twitter.svg" alt="Twitter" />
-          <img src="./images/icon-pinterest.svg" alt="Pinterest" />
+          <p class="article-preview">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+        </section>
+
+        <div class="card-author">
+          <div class="article-bio">
+            <img
+              class="article-avatar"
+              src="./images/avatar-michelle.jpg"
+              alt=""
+            />
+            <div>
+              <p class="article-author">Michelle Appleton</p>
+              <p class="article-date">28 Jun 2020</p>
+            </div>
+          </div>
+
+          <div class="card-share">
+            <span class="text-share">Share</span>
+            <div class="share-icons">
+              <img src="./images/icon-facebook.svg" alt="Facebook" />
+              <img src="./images/icon-twitter.svg" alt="Twitter" />
+              <img src="./images/icon-pinterest.svg" alt="Pinterest" />
+            </div>
+          </div>
+
+          <a class="article-share" href="">
+            <img src="./images/icon-share.svg" alt="Share" />
+          </a>
         </div>
       </div>
     </main>
+
+    <div class="card-share-modal">
+      <span class="text-share">Share</span>
+      <div class="share-icons">
+        <img src="./images/icon-facebook.svg" alt="Facebook" />
+        <img src="./images/icon-twitter.svg" alt="Twitter" />
+        <img src="./images/icon-pinterest.svg" alt="Pinterest" />
+      </div>
+    </div>
 
     <div class="attribution">
       Challenge by
@@ -55,5 +85,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Yan Baetas</a>.
     </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
